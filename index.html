@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Life Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Life Visualizer</h1>
+        </div>
+    </header>   
+    <main class="container">
+        <div class="input-area">
+            <label for="birthdateInput" class="section-title">Enter Your Birthdate:</label>
+            <input type="date" id="birthdateInput" class="input-field">
+            <button id="calculateButton" class="action-button">Calculate</button>
+            <p id="validationMessage" class="validation-message"></p>
+        </div>
+
+        <div class="results">
+            <section class="age-display">
+                <h2>Your Age</h2>
+                <p id="age" class="result-text"></p>
+            </section>
+            <section class="timer">
+                <h2>Time Since Birth</h2>
+                <p id="countup" class="result-text"></p>
+            </section>
+            <section class="timer">
+                <h2>Time Until Expected Lifespan</h2>
+                <p id="countdown" class="result-text"></p>
+            </section>
+            <section class="life-progress">
+                <h2>Your Life Progress</h2>
+                <div id="lifeProgressBarContainer" class="progress-bar">
+                    <div id="lifeProgressBar"></div>
+                </div>
+                <p id="lifeProgressPercentage" class="progress-text"></p>
+            </section>
+        </div>
+    </main>
+    <!-- <footer>
+        <div class="footer-content">
+            <p class="newsletter-invite">Join our newsletter for updates</p>
+            <button class="newsletter-button">Subscribe</button>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
